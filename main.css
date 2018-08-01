@@ -78,6 +78,12 @@ h1 {
 	font-size: 1.43em;
 }
 
+.account span{
+	display: flex;
+	align-items: center;
+}
+
+
 .signup {
 	grid-column: 3;
 }
@@ -216,7 +222,7 @@ h1 {
     content:"\f078";
     font-family: "FontAwesome";
 	font-size: 18px;
-    color: #ABB3BB;
+    color: #ddd;
     right: 9px;
     top: 10px;
     position:absolute;
