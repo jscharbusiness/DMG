@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JSchar DMG</title>
+
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Create Your FREE My Portfolio Profile</h1>
+
+		<div class="account">
+			<h2>Why Create an Account?</h2>
+			<p>If you're searching for your next home, or just curious about the market there is no better tool to help you quickly find homes that meet your needs and wants.</p>
+			<p>With an account you can:</p>
+			<ul>
+				<li><i class="fas fa-home"></i><span>Save your favorite listings</span></li>
+				<li><i class="fas fa-search"></i><span>Save searches with your important parameters</span></li>
+				<li><i class="fas fa-certificate"></i><span>Be notified of new listings that meet your criteria</span></li>
+				<li><i class="fas fa-bell"></i><span>Be notified of changes to your saved listings such as a price reduction or when a property goes off the market</span></li>
+				<li><i class="fas fa-check"></i><span>Keep track of homes you have  recently viewed</span></li>
+			</ul>
+		</div>
+		<div class="signup">
+			<h2>Sign Up Today</h2>
+			<form>
+				<input type="text" class="required" id="fname" name="fname" placeholder="First Name*">
+				<input type="text" class="required" id="lname" name="lname" placeholder="Last Name*">
+				<input type="text"id="phone" name="phone" placeholder="Phone">
+				<input type="email" class="required" id="email" name="email" placeholder="Email*">
+				<input type="password" class="required" id="password" name="password" placeholder="Create Password*">
+
+				<label class="withAgent">I am currently working with a Real Estate Firm Demo agent
+					<input type="checkbox" id="withAgent" name="withAgent">
+					<span class="checkmark"></span>
+				</label>
+				<label class="chooseAgent">
+					<select id="agent" name="agent" >
+						<option value="" disabled selected>Select an Agent</option>
+						<option value="1">Another option</option>
+						<option value="2">Another option</option>
+						<option value="3">Another option</option>
+						<option value="4">Another option</option>
+					</select>
+				</label>
+				<div class="g-recaptcha" data-sitekey="6Lclw2cUAAAAAGZ7PpW37pytZ0qr4CZbwcy6M4mV"></div>
+				<button onclick="">CREATE ACCOUNT</button>
+			</form>
+			<hr>
+			<div id="signinLink">
+				Already have an account? <a href="#">Sign in Here.</a>
+			</div>
+			<div id="forgotPasswordLink">
+				<a href="#">Forgot your password?</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

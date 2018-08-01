@@ -1,0 +1,285 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	color: #717171;
+}
+
+body {
+	/*background-image: url(lpd.png);*/
+	background-repeat: no-repeat;
+}
+
+.container {
+	padding: 21px 28px;
+	display: grid;
+	grid-template-columns: 50% 2.5% 47.5%;
+	grid-template-rows: 83px 500px;
+	max-width: 1212px;
+	margin: auto;
+	min-height: 707px;
+	overflow: auto;
+}
+
+h1 {
+	color: #008bbf;
+	font-size: 36px;
+	margin: 0;
+	padding: 0;
+	grid-column: 1 / span 3;
+	font-weight: 100;
+	letter-spacing: -0.0093rem;
+}
+
+.account {
+	background-color: #008bbf;
+	padding: 24px 30px;
+	color: #fff;
+	padding-bottom: 166px;
+	min-height: 434px;
+}
+
+.account h2 {
+	margin: 0;
+	font-weight: 100;
+	margin-bottom: 26px;
+}
+
+.account p:nth-of-type(1) {
+	margin: 0;
+	font-weight: 100;
+	font-size: 1.125em;
+	line-height: 1.3em;
+	margin-bottom: 23px;
+}
+
+.account p:nth-of-type(2) {
+	margin: 0;
+	font-size: 1.18em;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+.account ul {
+	margin: 0;
+	padding: 0;
+}
+
+.account li {
+    list-style-type: none;
+    margin: 0;
+    font-size: 1.12em;
+    padding: 12.7px 0;
+    display: grid;
+    grid-template-columns: 35px auto;
+}
+
+.account i{
+	font-size: 1.43em;
+}
+
+.signup {
+	grid-column: 3;
+}
+
+.signup h2 {
+	color: #008bbf;
+	font-weight: 100;
+	font-size: 1.84em;
+}
+
+.signup form {
+    display: grid;
+    grid-template-columns: 48.5% 48.5%;
+    grid-template-rows: auto auto auto auto auto 63px auto;
+    grid-column-gap: 3%;
+    grid-row-gap: 19px;
+    margin-bottom: 38px;
+}
+
+.signup form input, .signup form select {
+	font-size: 1.15em;
+	padding: 7px;
+	font-weight: 100;
+	border: 1px solid #D3D3D3;
+	text-indent: 3px;
+}
+
+::placeholder{
+	font-weight: 100;
+	text-indent: 3px;
+	color: #717171;
+}
+
+.required::placeholder{
+	color: #D34241;
+}
+
+.signup form #password {
+	grid-column: 1 / span 2;
+}
+
+.signup form label {
+	grid-column: 1 / span 2;
+
+}
+
+
+
+
+.withAgent {
+    display: block;
+    position: relative;
+    padding-left: 27px;
+    letter-spacing: -0.002rem;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.withAgent input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #D3D3D3;
+    height: 17px;
+    width: 17px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.withAgent input:checked ~ .checkmark {
+    background-color: #008bbf;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.withAgent input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.withAgent .checkmark:after {
+	left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+.signup form select {
+	text-indent: 0px;
+	width: 100%;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    color: #717171;
+}
+
+.signup form .chooseAgent {
+	position: relative;
+	grid-column: 1 / span 2;
+}
+
+.chooseAgent:after {
+    content:"\f078";
+    font-family: "FontAwesome";
+	font-size: 18px;
+    color: #ABB3BB;
+    right: 9px;
+    top: 10px;
+    position:absolute;
+    pointer-events:none;
+}
+
+.chooseAgent:before {
+    right:4px; 
+    top:0px;
+    width:23px; 
+    height:18px;
+    background:#fff;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+
+
+.signup form .g-recaptcha {
+	grid-column: 1 / span 2;
+	transform:scale(0.8);
+	-webkit-transform:scale(0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    position: relative;
+    top: 1px;
+
+}
+
+.signup form button {
+	grid-column: 1 / span 2;
+	width: 66%;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	justify-content: center;
+	background-color: #008bbf;
+	color: #fff;
+	font-size: 1.1em;
+    padding: 10px;
+    border-radius: 6px;
+    border-style: none;
+}
+
+.signup hr {
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #D3D3D3;
+    margin: 1em 0 1.7em 0;
+    padding: 0; 
+}
+
+.signup #signinLink, .signup #forgotPasswordLink {
+	text-align: center;
+}
+
+.signup #signinLink a, .signup #forgotPasswordLink a{
+	color: #008bbf;
+	text-decoration: none;
+}
+
+.signup #forgotPasswordLink {
+	margin-top: 5px;
+}
