@@ -12,6 +12,16 @@ html, body {
 	color: #717171;
 }
 
+h1 {
+	color: #008bbf;
+	font-size: 36px;
+	font-weight: 100;
+	padding: 21px 28px;
+	margin: 0;
+	max-width: 1212px;
+	margin: auto;
+}
+
 /* Main Container - split into account div and signup div using grid system*/
 .container {
 	padding: 21px 28px;
@@ -25,17 +35,6 @@ html, body {
 	margin: auto;
 	min-height: 707px;
 	overflow: auto;
-}
-
-h1 {
-	color: #008bbf;
-	font-size: 36px;
-	margin: 0;
-	padding: 0;
-	-ms-grid-column: 1;
-	-ms-grid-column-span: 3;
-	grid-column: 1 / span 3;
-	font-weight: 100;
 }
 
 /* First div in container*/
@@ -307,6 +306,7 @@ h1 {
     padding: 10px;
     border-radius: 6px;
     border-style: none;
+    cursor: pointer;
 }
 
 .signup hr {
@@ -335,18 +335,23 @@ h1 {
 @media (max-width: 900px) {
 	
 	.container {
-		padding: 21px 28px;
+		padding: 0px 28px 21px 28px;
 		display: -ms-grid;
 		display: grid;
 		-ms-grid-columns: auto;
 		grid-template-columns: auto;
-		-ms-grid-rows: auto 630px auto;
-		grid-template-rows: auto 630px auto;
+		-ms-grid-rows: auto auto;
+		grid-template-rows: auto auto;
+		grid-row-gap: 40px;
 	}
 
 	h1 {
 		font-size: 1.9em;
+		font-weight: 100;
+		padding: 21px 28px 0px 28px;
+		margin: 0;
 	}
+
 
 	/* Signup div is above account div now*/
 	.signup {
@@ -354,7 +359,7 @@ h1 {
 		-ms-grid-row-span: 1;
 		-ms-grid-column: 1;
 		-ms-grid-column-span: 1;
-		grid-area: 2 / 1 / span 1 / span 1;
+		grid-area: 1 / 1 / span 1 / span 1;
 	}
 
 	.account {
@@ -362,7 +367,7 @@ h1 {
 		-ms-grid-row-span: 1;
 		-ms-grid-column: 1;
 		-ms-grid-column-span: 1;
-		grid-area: 3 / 1 / span 1 / span 1;
+		grid-area: 2 / 1 / span 1 / span 1;
 	}
 }
 
@@ -371,17 +376,16 @@ h1 {
 
 	.container {
 		margin: 0;
-		padding: 13px 0px 20px 0px;
+		padding: 0px;
 		-ms-grid-columns: 100%;
 		grid-template-columns: 100%;
 	}
 
 	h1 {
-	    font-size: 31px;
-	    padding: 0px 19px;
-	    -ms-grid-column: 1;
-	    -ms-grid-column-span: 1;
-	    grid-column: 1 / span 1;
+		font-size: 30px;
+	    font-weight: 100;
+	    padding: 14px 20px 0px 20px;
+	    margin: 0;
 	}
 
 	/* Signup div is above account div now*/
@@ -399,7 +403,7 @@ h1 {
 	}
 
 	.signup h2 {
-		margin: 23px 0px 19px 0px;
+		margin: 22px 0px 19px 0px;
 	}
 
 	.signup form input, .signup form select {
@@ -427,9 +431,10 @@ h1 {
 	}
 
 	.account {
-		margin-top: 85px;
+		margin-top: 0;
 		padding-bottom: 20px; 
 		min-height: 434px; 
+		margin-bottom: 30px;
 	}
 
 	.account li {
